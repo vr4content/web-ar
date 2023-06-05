@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Required for favicon -->
+    <link rel="icon" href="./assets/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/manifest.webmanifest">
+
+
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- required by model viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+</head>
+
+
+<body class="text-center bg-white">
+    <!-- whole web container inside body-->
+    <div class="container w-100">
+
+        <!-- menu header section -->
+        <nav class="navbar navbar-expand-md pt-2">
+            <a href="" class="navbar-brand">
+                <img src="./assets/vr4content.512.transparent.bg.png" alt="vr4content icon" width="25" height="25"
+                    class="mb-2">
+                <h5 class="text-dark d-inline-block px-2">Web AR experience</h5>
+            </a>
+            <!--collapsed button  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <!--menu elements  -->
+            <div class="collapse navbar-collapse small justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link nav-item text-black-50" href="#how_to">how to use?</a></li>
+                    <li class="nav-item"><a class="nav-link nav-item text-black-50" href="#embed">embed code</a></li>
+                    <li class="nav-item"><a class="nav-link nav-item text-black-50" href="#about">about this web</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link nav-item text-black-50" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 3d model section -->
+        <div class="shadow bg-light">
+
+            <div class="row px-3 py-2 align-items-center">
+
+                <h5 class="text-start"><i class="bi bi-phone pe-2"></i>3D AR for mobile and web</h5>
+                <!-- left column -->
+                <div class="col">
+
+
+                    <p class="text-center">Here you can see how it looks your 3D model integrated on
+                        the webpage. This is also a web AR experience made for mobiles phones. To bring this 3D model to
+                        your
+                        environment visit this page with your mobile web browser.</p>
+
+                    <P class="mb-0 small pt-2">follow us for more content:</P>
+                    <div class="btn-group">
+                        <button type="button" class="btn"><a target="_blank" class="text-dark"
+                                href="https://www.instagram.com/vr4content/"><i
+                                    class="bi bi-instagram"></i></a></button>
+                        <button type="button" class="btn"><a target="_blank" class="text-dark"
+                                href="https://www.youtube.com/channel/UC8KziANSHhEH-ctOw1bWSWA"><i
+                                    class="bi bi-youtube"></i></a></button>
+                        <button type="button" class="btn"><a target="_blank" class="text-dark"
+                                href="https://twitter.com/vr4content"><i class="bi bi-twitter"></i></a></button>
+                        <button type="button" class="btn"><a target="_blank" class="text-dark"
+                                href="https://www.facebook.com/vr4content/"><i class="bi bi-facebook"></i></a></button>
+                        <button type="button" class="btn"><a target="_blank" class="text-dark"
+                                href="https://www.linkedin.com/company/vr4content"><i
+                                    class="bi bi-linkedin"></i></a></button>
+                    </div>
+                </div>
+
+                <!-- right column   -->
+                <div class="col">
+
+                    <model-viewer
+                        style="width: 300px; height: 300px; margin:0 auto; background-color: #ffffff00; outline: none;border: none"
+                        src="./assets/your3dmodel.glb" ios-src="./assets/your3dmodel.usdz" alt="your 3d model"
+                        auto-rotate ar ar-modes="scene-viewer webxr quick-look" camera-orbit="90deg 90deg 0.5m"
+                        min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 0.5m" camera-controls>
+                    </model-viewer>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- how to use section -->
+        <div id="how_to" class="shadow bg-light mt-4 pb-3 px-3">
+            <h5 class="text-start py-2 "><i class="bi bi-info-circle pe-2"></i>how to use?</h5>
+        </div>
+
+        <!-- embed section -->
+        <div id="embed" class="shadow bg-light mt-4 pb-3 px-3">
+            <h5 class="text-start py-2"><i class="bi bi-code-square pe-2"></i>embed code</h5>
+        </div>
+
+        <!-- about this web section -->
+        <div id="about" class="shadow bg-light mt-4 pb-3 px-3">
+            <h5 class="text-start py-2"><i class="bi bi-search pe-2"></i>more about this experience</h5>
+        </div>
+
+
+        <!-- contact section -->
+        <div id="contact" class="shadow bg-light mt-4 mt-3 px-3">
+            <h5 class="text-start py-2"><i class="bi bi-person-circle pe-2"></i>contact</h5>
+        </div>
+
+
+        <!-- footer section -->
+        <footer class="text-black-50 mt-5">
+
+            <P class="mb-0 small">follow us for more content:</P>
+            <div class="btn-group">
+                <button type="button" class="btn"><a class="text-black-50"
+                        href="https://www.instagram.com/vr4content/"><i class="bi bi-instagram"></i></a></button>
+                <button type="button" class="btn"><a class="text-black-50"
+                        href="https://www.youtube.com/channel/UC8KziANSHhEH-ctOw1bWSWA"><i
+                            class="bi bi-youtube"></i></a></button>
+                <button type="button" class="btn"><a class="text-black-50" href="https://twitter.com/vr4content"><i
+                            class="bi bi-twitter"></i></a></button>
+                <button type="button" class="btn"><a class="text-black-50"
+                        href="https://www.facebook.com/vr4content/"><i class="bi bi-facebook"></i></a></button>
+                <button type="button" class="btn"><a class="text-black-50"
+                        href="https://www.linkedin.com/company/vr4content"><i class="bi bi-linkedin"></i></a></button>
+            </div>
+            <p class="small">this is a web design powered by vr4content.com</p>
+        </footer>
+    </div>
+
+    <!-- bootstrap requirement-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
